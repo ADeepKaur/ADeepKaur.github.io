@@ -9,12 +9,13 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #fdfdfd;
       color: #333;
+      line-height: 1.8;
     }
     header {
-      background-color: #0057b7;
-      color: white;
+      background-color: #cce5ff;
+      color: #003366;
       padding: 40px 20px;
       text-align: center;
     }
@@ -24,9 +25,9 @@
     }
     h2 {
       margin-top: 30px;
-      border-bottom: 2px solid #ddd;
+      border-bottom: 1px solid #ccc;
       padding-bottom: 5px;
-      color: #0057b7;
+      color: #0056b3;
     }
     .container {
       max-width: 900px;
@@ -39,18 +40,37 @@
     .section {
       margin-bottom: 30px;
     }
+    .skill-list li::before {
+      content: "✅ ";
+      color: #28a745;
+    }
+    .contact-buttons a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background-color: #0056b3;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .contact-buttons a:hover {
+      background-color: #004494;
+    }
     footer {
       text-align: center;
       margin-top: 40px;
       font-size: 14px;
       color: #777;
+      padding-bottom: 20px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Aman K</h1>
+    <h1>Aman Kaur</h1>
     <p>IAM Consultant | IT Support | Customer Service | Based in Australia</p>
   </header>
 
@@ -58,12 +78,12 @@
     <div class="section">
       <h2>About Me</h2>
       <p>
-        I’m an IAM Consultant at Deloitte with a strong background in IT support (Qantas)
+        I’m an IAM Consultant at AMP with a strong background in IT support (Qantas)
         and customer service (Woolworths, Harvey Norman). I hold a degree in Information
         Technology from India and have completed courses in Web Design and Python at TAFE Australia.
       </p>
       <p>
-        With ADHD as part of my journey, I’ve developed a sharp sense of focus, creative thinking,
+        I’ve developed a sharp sense of focus, creative thinking,
         and high adaptability. I value user-friendly, secure systems and continuous learning.
       </p>
     </div>
@@ -71,27 +91,27 @@
     <div class="section">
       <h2>Experience</h2>
       <ul>
-        <li><strong>IAM Consultant – Deloitte</strong><br>Managing user identities and system access securely and efficiently.</li>
-        <li><strong>IT Support – Qantas</strong><br>Helpdesk support, troubleshooting, and user management (Active Directory).</li>
-        <li><strong>Customer Service – Woolworths & Harvey Norman</strong><br>Retail support, POS handling, and customer engagement.</li>
+        <li><strong>🛡️ IAM Consultant – Deloitte</strong><br>Managing user identities and system access securely and efficiently.</li>
+        <li><strong>💻 IT Support – Qantas</strong><br>Helpdesk support, troubleshooting, and user management (Active Directory).</li>
+        <li><strong>🛒 Customer Service – Woolworths & Harvey Norman</strong><br>Retail support, POS handling, and customer engagement.</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Education & Training</h2>
       <ul>
-        <li><strong>Bachelor of Information Technology</strong> – India</li>
-        <li><strong>Web Design & Python Courses</strong> – TAFE Australia</li>
+        <li><strong>🎓 Bachelor of Information Technology</strong> – India</li>
+        <li><strong>📚 Web Design & Python Courses</strong> – TAFE Australia</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Skills</h2>
-      <ul>
+      <ul class="skill-list">
         <li>Identity & Access Management (IAM)</li>
         <li>IT Support & Troubleshooting</li>
         <li>Active Directory</li>
-        <li>Web Design (Basic HTML/CSS)</li>
+        <li>Web Design (HTML/CSS Basics)</li>
         <li>Python (Beginner)</li>
         <li>Customer Communication</li>
         <li>Problem Solving</li>
@@ -101,8 +121,10 @@
 
     <div class="section">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:caur.amanda@gmail.com">caur.amanda@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/aman-kaur-824124233/" target="_blank">Aman Kaur</a></p>
+      <div class="contact-buttons">
+        <a href="mailto:caur.amanda@gmail.com">📧 Email Me</a>
+        <a href="https://www.linkedin.com/in/aman-kaur-824124233/" target="_blank">🔗 LinkedIn</a>
+      </div>
     </div>
 
     <footer>
